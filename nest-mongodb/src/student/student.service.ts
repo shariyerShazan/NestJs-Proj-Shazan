@@ -13,7 +13,7 @@ export class StudentService {
     try {
       const newStudent = new this.studentModel(data);
       return newStudent.save();
-    } catch (error) {
+    } catch (error) { 
       console.log(error);
       throw new InternalServerErrorException(error);
     }
